@@ -1,0 +1,111 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/*Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) {
+    .card-prices{
+        height: 25rem;
+        width: 15rem;
+    }
+
+    .card-services{
+        height: 25rem;
+        width: 15rem;
+    }
+
+    .img-servicios{
+        height: 150px; 
+        width: 150px;
+    }
+
+    .jumbotron{
+        height: auto;
+        width: 100%;
+    }
+
+    .colora{
+        color: white;
+    }
+
+    .bordes1{
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    .bordes2{
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        border-top: 0px;
+    }
+
+    .img-qs{
+        height: 200px;
+        width: 200px;
+    }
+
+
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+    .navbar{
+        height: 100px;
+        position: fixed;
+        font-size: 15px;
+    } 
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .img-servicios{
+        height: 270px;
+        width: 270px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+    }
+
+    .img-qs{
+        height: 300px;
+        width: 300px;
+    }
+
+    .imgj{
+        padding-left: 55px;
+    }
+
+    .imgn{
+        height: 110px;
+    }
+
+    .bordes1{
+        border-top: 0px;
+        border-bottom: 0px;
+        border-left: 1px solid #E0E0E0;
+        border-right: 1px solid #E0E0E0;
+    }
+
+    .bordes2{
+        border-left: 0px;
+        border-right: 1px solid #E0E0E0;
+        border-bottom: 0px;
+        border-top: 0px;
+    }
+
+    
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*Extra large device (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+}
+
+
+
