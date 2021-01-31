@@ -21,7 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/index-min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/index-min.css"> -->
 
 </head>
 <body>
@@ -171,6 +172,10 @@
                         Integer sed lacinia tellus. Proin lacinia, urna nec convallis lacinia, turpis eros tristique nunc, placerat tincidunt mauris sem vitae erat. 
                         Nunc viverra libero nisi, nec luctus mauris gravida et. Sed pulvinar congue faucibus.
                     </p>
+                    <p uk-margin class="">
+                        <button id="botones_qs" class="uk-button uk-button-default" uk-toggle="target: #samuel">Samuel R.</button>
+                        <button id="botones_qs" class="uk-button uk-button-default" uk-toggle="target: #sebas">Sebastian</button>
+                    </p>
                 </div>
             </div>
 
@@ -190,6 +195,50 @@
             </div>
         </div>
     <!-- Fin Cards Quienes Somos-->
+
+    <!-- Inicio Modales -->
+    <div id="samuel" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h6 class="uk-modal-title">Samuel</h6>
+            <div id="contenedor" class="uk-container-small">
+                <div id="texto" style="width: 400px; height: 200px; background-color: aqua;"> 
+                    <p style="font-size: 12px; padding: 5px 12px 5px 12px;" class="uk-text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna nisl, fringilla eu elementum id, tempus ut ante. 
+                        Fusce congue magna id elit consectetur aliquet. Nunc tempor ut dolor sed gravida. 
+                        Duis lorem quam, fringilla vitae enim nec, euismod maximus magna. 
+                        Integer sed lacinia tellus. Proin lacinia, urna nec convallis lacinia, turpis eros tristique nunc, placerat tincidunt mauris sem vitae erat. 
+                        Nunc viverra libero nisi, nec luctus mauris gravida et. Sed pulvinar congue faucibus.
+                    </p>
+                </div>
+                <div id="imagen" style="background-color: blue;">
+                    <img class="uk-border-circle" src="https://dummyimage.com/200x200/000/fff" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sebas" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title">Sebastian</h2>
+            <div id="contenedor" class="uk-container-small">
+                <div id="texto" style="width: 400px; height: 200px; background-color: aqua;"> 
+                    <p style="font-size: 12px; padding: 5px 12px 5px 12px;" class="uk-text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna nisl, fringilla eu elementum id, tempus ut ante. 
+                        Fusce congue magna id elit consectetur aliquet. Nunc tempor ut dolor sed gravida. 
+                        Duis lorem quam, fringilla vitae enim nec, euismod maximus magna. 
+                        Integer sed lacinia tellus. Proin lacinia, urna nec convallis lacinia, turpis eros tristique nunc, placerat tincidunt mauris sem vitae erat. 
+                        Nunc viverra libero nisi, nec luctus mauris gravida et. Sed pulvinar congue faucibus.
+                    </p>
+                </div>
+                <div id="imagen"style="background-color: blue;">
+                    <img class="uk-border-circle" src="https://dummyimage.com/200x200/000/fff" alt="" class="uk-aling-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modales -->
 
     <!-- Inicio Footer -->
         <div id="footer_" style="width: 100%;">

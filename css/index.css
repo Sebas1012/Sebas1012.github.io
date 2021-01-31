@@ -94,6 +94,14 @@ nav{
     font-size: 12px;
 }
 
+#botones_qs{
+    border-radius: 30px;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: row;
+}
 
 
 /* Extra small devices (phones, 600px and down)*/
