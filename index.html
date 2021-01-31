@@ -3,21 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diodo - Soporte y Mantenimiento de Computadoras</title>
+
+    <link rel="shortcut icon" href="img/logos/logo_ico.ico">
+
+    <!--AOS animations CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/1c8dd1943a.js" crossorigin="anonymous"></script>
+
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="shortcut icon" href="img/logo mono SB.ico">
-    <title>Diodo</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
+    <!-- Inicio Navbar -->
+    <!-- Sacado de: https://codepen.io/shubhamjainco/pen/oPEzrV -->
+    <header>
+        <nav class="uk-navbar">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                        <a href=""><img src="img/logos/logo2.png" alt="" width="80px" height="80px"></a>
+                    </li> 
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-visible@s">
+                    <li><a href="#servicios" style="font-size: 11px;"><i class="fas fa-briefcase" style="padding-right: 5px;"></i>Servicios</a></li></li>
+                    <li><a href="#quienes_somos" style="font-size: 11px;"><i class="fas fa-book" style="padding-right: 5px;"></i>Quíenes Somos</a></li></li>
+                    <li><a href="#contactenos" style="font-size: 11px;"><i class="fas fa-envelope-open-text" style="padding-right: 5px;"></i>Contactenos</a></li>
+                </ul>
+                <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+            </div>
+        </nav>
+    </header>
     
-    <div class="uk-position-center">
-        <div class="uk-text-center animacion1">
-            <img src="img/undraw_coffee_break_h3uu.svg" alt="" width="250px" height="250px">
-            <h3 class="">Estaremos pronto!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a magna non mi suscipit feugiat. <br>Suspendisse fermentum orci ac ante maximus, eget sodales dui malesuada.</p>
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav">
+                <li><a href="#servicios" style="font-size: 11px;"><i class="fas fa-briefcase" style="padding-right: 5px;"></i>Servicios</a></li></li>
+                <li><a href="#quienes_somos" style="font-size: 11px;"><i class="fas fa-book" style="padding-right: 5px;"></i>Quíenes Somos</a></li></li>
+                <li><a href="#contactenos" style="font-size: 11px;"><i class="fas fa-envelope-open-text" style="padding-right: 5px;"></i>Contactenos</a></li>
+            </ul>
         </div>
     </div>
+    <!-- Fin Navbar -->
+
+    <!-- Inicio SlideShow -->
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 200; max-height: 500; animation: push; autoplay: true; autoplay-interval: 4000">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="img/sliders/Asesoria.png" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="img/sliders/Mantenimiento.png" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="img/sliders/Reparacion.png" alt="" uk-cover>
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        
+        <span id="servicios"></span>
+    </div>
+    <!-- Fin SlideShow -->
+
+        <!-- Inicio Cards Servicios -->
+        <div id="cards_container" class="uk-container"  style="margin-bottom: 50px;">
+            <h2 class="uk-text-center">Servicios</h2>
+            <div id="cards_sv_container" class="uk-container-small uk-align-center">
+
+                <div id="cards_sv" class="uk-align-center" style="margin-top: 30px;" data-aos="fade-up" data-aos-duration="1000">
+                    <div id="imagen_sv" class="uk-align-center">
+                        <img src="img/iluctraciones/cards2/undraw_coffee_break_h3uu.svg" alt="" style="padding-top: 40px;">
+                    </div>
+                    <div id="texto_sv" class="uk-text-justify">
+                        <h5 class="uk-text-center">Reparación</h5>
+                        <p>
+                        Simplemente no funciona, no enciende o se queda cargando. 
+                        En cualquier caso necesita una reparación y nosotros contamos con las herramientas para detectar el problema y corregirlo, también en caso de ser necesario, 
+                        podemos ayudarte a reemplazar un componente.
+                        </p>
+                    </div>
+                </div>
+                <div id="cards_sv" class="uk-align-center" data-aos="fade-up" data-aos-duration="1600">
+                    <div id="imagen_sv" class="uk-align-center">
+                        <img src="img/iluctraciones/cards2/undraw_Accept_request_re_d81h.svg" alt="" style="padding-top: 20px;">
+                    </div>
+                    <div id="texto_sv" class="uk-text-justify">
+                        <h5 class="uk-text-center">Mantenimiento</h5>
+                        <p>
+                        Cuando tu computador no funciona de manera óptima y sus sintomas son temperatura alta, se apaga o está muy lento, la mejor opción es realizar un
+                        mantenimiento para corregir los problemas que presenta tanto en el Hardware como en el Software y así prevenir daños futuros.
+                        </p>
+                    </div>
+                </div>
+                <div id="cards_sv" class="uk-align-center" data-aos="fade-up" data-aos-duration="1900">
+                    <div id="imagen_sv"  class="uk-align-center">
+                        <img src="img/iluctraciones/cards1/undraw_Work_time_re_hdyv.svg" alt="" style="padding-top: 30px;">
+                    </div>
+                    <div id="texto_sv" class="uk-text-justify">
+                        <h5 class="uk-text-center">Asesoria</h5>
+                        <p>
+                        Tener dudas es muy común y todas ellas pueden ser resueltas por nosotros, nuestra experiencia nos permite asesorarte de la mejor 
+                        manera para conozcas todo acerca del funcionamiento de tu computador y sus componentes.
+                        </p>
+                    </div>
+                </div>
+                <div id="cards_sv" class="uk-align-center" data-aos="fade-up" data-aos-duration="2000">
+                    <div id="imagen_sv"  class="uk-align-center">
+                        <img src="img/iluctraciones/cards2/undraw_Social_networking_re_i1ex.svg" alt=""  style="padding-top: 30px;">
+                    </div>
+                    <div id="texto_sv" class="uk-text-justify">
+                        <h5 class="uk-text-center">Soporte Remoto</h5>
+                        <p>
+                            ¿Aparece un error cuando necesitas hacer algo y no sabes que significa? O solo necesitas configurar algo en tu computador y no sabes como? 
+                            Puedes contar con nuestro soporte remoto para darte soluciones sin desplazarte de tu casa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <span id="quienes_somos"></span>
+        </div>
+    <!-- Fin Cards servicios -->
+
+    <!-- Inicios Cards Quienes Somos -->
+        <div id="cards_container" class="uk-container"  style="margin-bottom: 50px;">
+            <h2 class="uk-text-center">¿Quiénes Somos?</h2>
+
+            <div id="cards_qs" class="uk-container-small uk-align-center" data-aos="fade-right" data-aos-duration="1300">
+                <div id="texto_qs" style="padding-top: 30px;">
+                    <h3>Lorem ipsums</h3>
+                    <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna nisl, fringilla eu elementum id, tempus ut ante. 
+                        Fusce congue magna id elit consectetur aliquet. Nunc tempor ut dolor sed gravida. 
+                        Duis lorem quam, fringilla vitae enim nec, euismod maximus magna. 
+                        Integer sed lacinia tellus. Proin lacinia, urna nec convallis lacinia, turpis eros tristique nunc, placerat tincidunt mauris sem vitae erat. 
+                        Nunc viverra libero nisi, nec luctus mauris gravida et. Sed pulvinar congue faucibus.
+                    </p>
+                </div>
+                <div id="imagen_qs" class="uk-align-center uk-align-left@s uk-margin-remove-adjacent">
+                    <img src="img/iluctraciones/cards1/undraw_teamwork_hpdk.svg" alt="">
+                </div>
+            </div>
+
+            <div id="cards_qs"  class="uk-container-small uk-align-center" style="border-top: 1px solid #DEE2E6; border-bottom: 1px solid #DEE2E6;"  data-aos="fade-left" data-aos-duration="1600">
+                <div id="imagen_qs" class="uk-align-center uk-align-right@s uk-margin-remove-adjacent" >
+                    <img src="img/iluctraciones/cards1/undraw_Work_time_re_hdyv.svg" alt="">
+                </div>
+
+                <div id="texto_qs" style="padding-top: 60px;">
+                    <h3>Lorem ipsums</h3>
+                    <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna nisl, fringilla eu elementum id, tempus ut ante. 
+                        Fusce congue magna id elit consectetur aliquet. Nunc tempor ut dolor sed gravida. 
+                        Duis lorem quam, fringilla vitae enim nec, euismod maximus magna. 
+                        Integer sed lacinia tellus. Proin lacinia, urna nec convallis lacinia, turpis eros tristique nunc, placerat tincidunt mauris sem vitae erat. 
+                        Nunc viverra libero nisi, nec luctus mauris gravida et. Sed pulvinar congue faucibus.
+                    </p>
+                </div>
+            </div>
+
+            <div id="cards_qs"  class="uk-container-small uk-align-center"  data-aos="fade-right" data-aos-duration="1900">
+                <div id="texto_qs">
+                    <h3>Lorem ipsums</h3>
+                    <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna nisl, fringilla eu elementum id, tempus ut ante. 
+                        Fusce congue magna id elit consectetur aliquet. Nunc tempor ut dolor sed gravida. 
+                        Duis lorem quam, fringilla vitae enim nec, euismod maximus magna. 
+                        Integer sed lacinia tellus. Proin lacinia, urna nec convallis lacinia, turpis eros tristique nunc, placerat tincidunt mauris sem vitae erat. 
+                        Nunc viverra libero nisi, nec luctus mauris gravida et. Sed pulvinar congue faucibus.
+                    </p>
+                </div>
+                <div id="imagen_qs" class="uk-align-center uk-align-left@s uk-margin-remove-adjacent">
+                    <img src="img/iluctraciones/cards1/undraw_Booked_re_vtod.svg" alt="">
+                </div>
+            </div>
+        </div>
+    <!-- Fin Cards Quienes Somos-->
+
+    <!-- Inicio Footer -->
+        <div id="footer_" style="width: 100%;">
+            <span id="contactenos"></span>
+            <div id="footer_box" data-aos="fade-right" data-aos-duration="1000">
+                <h5 style="color: white;">Redes Sociales:</h5>
+                <ul class="uk-list uk-list-collapse">
+                    <li><a style="color: white;" href=""><i class="fab fa-instagram" style="padding-right: 5px;"></i>Instagram</a></li>
+                    <li><a style="color: white;" href=""><i class="fab fa-whatsapp" style="padding-right: 5px;"></i>WhatsApp 1</a></li>
+                    <li><a style="color: white;" href="">WhatsApp 2</a></li>
+                </ul>
+            </div>
+            <div id="footer_box" data-aos="fade-right" data-aos-duration="1000">
+                <h5 style="color: white;">Horarios:</h5>
+                <ul class="uk-list uk-list-collapse">
+                    <li>Lunes a Viernes: 9am - 5pm</li>
+                    <li>Sabados y Domingos: 10am - 2pm</li>
+                </ul>
+            </div>
+            <div id="footer_box" style="border: 0px;" data-aos="fade-right" data-aos-duration="1000">
+                <h5 style="color: white;">Contactenos:</h5>
+                <ul class="uk-list uk-list-collapse">
+                    <li><i class="fas fa-mobile-alt" style="padding-right: 5px;"></i>+57 304 429 0850</li>
+                    <li><i class="fas fa-envelope-square" style="padding-right: 5px;"></i>info@diodo.com.co</li>
+                    <li>Medellín - Colombia</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer_2" class="uk-text-center">
+            <p style="padding-top: 10px;">© 2020 Copyright Diodo Soluciones Medellin</p>
+        </div>
+    <!-- Fin Footer -->
+
+    <!-- AOS animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit-icons.min.js"></script>
