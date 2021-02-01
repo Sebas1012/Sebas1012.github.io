@@ -98,9 +98,22 @@ nav{
     border-radius: 30px;
 }
 
-#contenedor{
+#contenedor_modal{
     display: flex;
     flex-direction: row;
+
+    justify-content: center;
+}
+
+#texto_modal{
+    width: 70%;
+    height: auto;
+    
+    padding-top: 10px;
+}
+
+#imagen_modal{
+    padding: 15px 10px 0px 10px;
 }
 
 
@@ -138,6 +151,21 @@ nav{
 
     #footer_2{
         height: 50px;
+    }
+
+    #contenedor_modal{
+        flex-direction: column;
+    }
+
+    #texto_modal{
+        width: auto;
+        height: auto;
+
+        padding: 10px 10px 0px 10px;
+    }
+
+    #imagen_modal{
+        padding: 10px 0px 10px 0px;
     }
 }
 
