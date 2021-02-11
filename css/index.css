@@ -1,5 +1,6 @@
 *{
-    font-family: 'Oxygen', sans-serif;
+    /* font-family: 'Oxygen', sans-serif; */
+    font-family: 'Inter', sans-serif;
 }
 
 html{
@@ -96,6 +97,25 @@ nav{
 
 #botones_qs{
     border-radius: 30px;
+    background: rgb(25,131,158);
+    background: linear-gradient(90deg, rgba(25,131,158,1) 0%, rgba(29,150,178,1) 35%, rgba(74,193,239,1) 100%);
+    color: white;
+}
+
+#botones_wp{
+    margin: 0px 15px 10px 0px; 
+    border-radius: 30px; 
+    background-color: #1AD340; 
+    color: white; 
+    border-color: white;
+}
+
+#botones_wp:hover{
+    filter: grayscale(10%);
+}
+
+#botones_qs:hover{
+    filter: grayscale(20%);
 }
 
 #contenedor_modal{
