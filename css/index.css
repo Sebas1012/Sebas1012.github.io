@@ -136,6 +136,14 @@ nav{
     padding: 15px 10px 0px 10px;
 }
 
+#parrafo_cards{
+    font-size: 13px;
+    padding-right: 50px;
+}
+
+#nombre_card{
+    padding-left: 60px;
+}
 
 /* Extra small devices (phones, 600px and down)*/
 @media only screen and (max-width: 600px) {
@@ -186,6 +194,21 @@ nav{
 
     #imagen_modal{
         padding: 10px 0px 10px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #parrafo_cards{
+        font-size: 13px;
+        padding-right: 0px;
+    }
+
+    #nombre_card{
+        padding-left: 10px;
+    }
+    
+    #botones_qs{
+        width: 100%;
     }
 }
 
