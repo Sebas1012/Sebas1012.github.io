@@ -100,6 +100,8 @@ nav{
     background: rgb(25,131,158);
     background: linear-gradient(90deg, rgba(25,131,158,1) 0%, rgba(29,150,178,1) 35%, rgba(74,193,239,1) 100%);
     color: white;
+
+    width: 170px;
 }
 
 #botones_wp{
@@ -143,6 +145,23 @@ nav{
 
 #nombre_card{
     padding-left: 60px;
+}
+
+.logo_diodo{
+    width: 120px;
+    height: 120px;
+
+    padding-top: 15px;
+}
+
+.box_logo{
+    padding-left: 20px; 
+    display: flex; 
+    flex-direction: row;
+}
+
+.parrafo_footer{
+    padding: 15px 30px 0px 20px;
 }
 
 /* Extra small devices (phones, 600px and down)*/
@@ -210,6 +229,25 @@ nav{
     #botones_qs{
         width: 100%;
     }
+
+    .box_logo{
+        flex-direction: column;
+        justify-content: center;
+
+        padding-bottom: 30px;
+    }
+
+    .parrafo_footer{
+        padding: 0px 0px 0px 0px;
+    }
+
+    .logo_diodo{
+        width: 120px;
+        height: 120px;
+    
+        padding-top: 0px;
+    }
+    
 }
 
 /*Small devices (portrait tablets and large phones, 600px and up)*/
