@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="250px" width="200px" src="/img/logos/logo2.png">
+  <img height="200px" width="200px" src="/img/logos/logo2.png">
 </p>
 
 ## Diodo Landing Page:
